@@ -35,3 +35,4 @@ robot = hyq2max.HyQ2Max(urdf, yarf)
 fbs = dwl.FloatingBaseSystem()
 fbs.resetFromURDFFile(dwl_path + 'sample/hyq2max.urdf',
                       dwl_path + 'config/hyq2max.yarf')
+
