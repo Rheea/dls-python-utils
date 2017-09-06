@@ -46,7 +46,7 @@ ws_vec = bag_parser.extractWholeBodyState(bag_file,
 time = array_utils.getTimeArray(ws_vec)
 #joint_eff = array_utils.getJointEffortArray(ws_vec)
 #num_joints = ws_vec[0].getJointDoF()
-#joint_lbound = [[-robot.getTorqueLimit(i, k.getJointPosition()[i]) for k in ws_vec] for i in range(num_joints)]
+joint_lbound = [[-robot.getTorqueLimit(i, k.getJointPosition()[i]) for k in ws_vec] for i in range(num_joints)]
 #joint_ubound = [[robot.getTorqueLimit(i, k.getJointPosition()[i]) for k in ws_vec] for i in range(num_joints)]
 
 
